@@ -1509,7 +1509,7 @@ async function autoAIAnalysis(){
   var ctx = buildCtx();
   if(!ctx) return;
 
-  var sys = "You are ForensIQ AI Analyst, created by Egor Gubarev. Senior DFIR analyst. "
+  var sys = "You are ForensIQ AI Analyst, created by Jegor Gubarev. Senior DFIR analyst. "
     + "RULES: Only reference findings that actually exist in the scan data. Use real process names, ports, IPs. "
     + "Start with VERDICT: one sentence. Then TOP THREATS: 3 real findings with exact details. "
     + "Then ACTIONS: 2-3 terminal commands. Max 200 words. No generic advice.";
@@ -2703,12 +2703,12 @@ async function aiSend(){
   $("ai-msgs").scrollTop=$("ai-msgs").scrollHeight;
   $("ai-status").textContent="thinking...";
 
-  var sys="You are ForensIQ AI Analyst, created by Egor Gubarev. You are a senior cybersecurity analyst specializing in DFIR. "
+  var sys="You are ForensIQ AI Analyst, created by Jegor Gubarev. You are a senior cybersecurity analyst specializing in DFIR. "
     +"You have been given REAL scan data from a live system. Analyze it carefully and answer specifically based on the actual data provided. "
     +"RULES: 1) Only reference findings that actually exist in the scan data. 2) Be specific - name actual process names, ports, IPs from the data. "
     +"3) If you see a critical threat, explain exactly why it is dangerous. 4) Always give concrete commands to investigate or fix. "
     +"5) Use **bold** for threat names, backtick-wrapped code for commands/paths/PIDs. 6) Keep answers focused and practical. "
-    +"7) If asked who created you, say: I am ForensIQ AI Analyst, created by Egor Gubarev.";
+    +"7) If asked who created you, say: I am ForensIQ AI Analyst, created by Jegor Gubarev.";
 
   // Build messages array with full context
   // Strategy: send full context as first user message, then real conversation history

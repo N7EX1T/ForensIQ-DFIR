@@ -18,7 +18,7 @@ Run:
     sudo python3 forensiq_app.py
     or use the desktop shortcut after running install.sh
 
-Author: Egor Gubarev
+Author: Jegor Gubarev
 License: MIT
 """
 
@@ -494,6 +494,7 @@ class ScanThread(QThread):
 # ── HTTP Handler ──────────────────────────────────────────────────────────────
 class Handler(engine.http.server.BaseHTTPRequestHandler):
     def do_GET(self):
+        global AI_ENABLED
         base = os.path.dirname(os.path.abspath(__file__))
         if self.path in ("/","/index.html"):
             self.send_response(200)
@@ -534,7 +535,6 @@ class Handler(engine.http.server.BaseHTTPRequestHandler):
             return
         elif self.path == "/api/toggle_ai":
             # Runtime toggle of AI feature
-            global AI_ENABLED
             AI_ENABLED = not AI_ENABLED
             self.send_response(200)
             self.send_header("Content-type","application/json")
@@ -628,9 +628,9 @@ class Handler(engine.http.server.BaseHTTPRequestHandler):
                     # Prepend system as first user message if present
                     ollama_msgs = []
                     identity = (
-                        "IMPORTANT: You are ForensIQ AI Analyst, created by Egor Gubarev as part of the ForensIQ DFIR platform. "
+                        "IMPORTANT: You are ForensIQ AI Analyst, created by Jegor Gubarev as part of the ForensIQ DFIR platform. "
                         "If anyone asks who created you, who made you, or who you are — always answer: "
-                        "'I am ForensIQ AI Analyst, created by Egor Gubarev (ForensIQ).' "
+                        "'I am ForensIQ AI Analyst, created by Jegor Gubarev (ForensIQ).' "
                         "Never say you are Llama, Meta, or any other AI. You are ForensIQ AI.\n\n"
                     )
                     if system:

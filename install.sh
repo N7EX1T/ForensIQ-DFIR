@@ -2,7 +2,7 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # ForensIQ v3.0 — One-click installer for Linux
 # Installs ForensIQ as a standalone desktop application
-# Egor Gubarev, 2026
+# Jegor Gubarev, 2026
 # ─────────────────────────────────────────────────────────────────────────────
 
 set -e

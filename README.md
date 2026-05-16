@@ -90,7 +90,7 @@ Built for **SME security teams, IT administrators, and incident responders** who
 ### Quick Install (Linux)
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/forensiq.git
+git clone https://github.com/N7EX1T/ForensIQ-DFIR.git
 cd forensiq
 chmod +x install.sh
 ./install.sh
@@ -105,7 +105,7 @@ After installation, launch from your application menu (search "ForensIQ") or run
 pip install --user PyQt6 PyQt6-WebEngine reportlab
 
 # 2. Clone the repo
-git clone https://github.com/YOUR_USERNAME/forensiq.git
+git clone https://github.com/N7EX1T/ForensIQ-DFIR.git
 cd forensiq
 
 # 3. Run directly
@@ -285,7 +285,7 @@ Pull requests welcome. For major changes, please open an issue first.
 
 ```bash
 # Setup development environment
-git clone https://github.com/YOUR_USERNAME/forensiq.git
+git clone https://github.com/N7EX1T/ForensIQ-DFIR.git
 cd forensiq
 pip install -r requirements.txt
 
@@ -297,7 +297,7 @@ sudo python3 forensiq_app.py
 
 ## 📄 License
 
-MIT © 2026 Egor Gubarev
+MIT © 2026 Jegor Gubarev
 
 ---
 
@@ -313,6 +313,6 @@ MIT © 2026 Egor Gubarev
 
 <div align="center">
 
-**Built by Egor Gubarev** · [Report a bug](https://github.com/YOUR_USERNAME/forensiq/issues) · [Request a feature](https://github.com/YOUR_USERNAME/forensiq/issues)
+**Built by Jegor Gubarev** · [Report a bug](https://github.com/N7EX1T/ForensIQ-DFIR/issues) · [Request a feature](https://github.com/N7EX1T/ForensIQ-DFIR/issues)
 
 </div>
