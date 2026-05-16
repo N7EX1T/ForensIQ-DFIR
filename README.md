@@ -1,43 +1,26 @@
 <div align="center">
 
-# 🛡️ ForensIQ
+# ForensIQ
 
 ### Digital Forensics & Incident Response Analyzer for Linux
 
 **v3.0** · A modern, all-in-one DFIR triage tool with AI-powered analysis
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20Windows-lightgrey)]()
-[![Python](https://img.shields.io/badge/python-3.10%2B-green)]()
-
-[Features](#-features) · [Install](#-installation) · [Usage](#-usage) · [Architecture](#-architecture) · [Roadmap](#-roadmap)
-
 </div>
 
 ---
 
-## 📖 Overview
+## Overview
 
 **ForensIQ** is a desktop DFIR (Digital Forensics & Incident Response) analyzer that performs comprehensive triage of a Linux system in under a minute. It collects data from 19 distinct sources, correlates events into attack chains, visualizes findings in an interactive dashboard, and optionally explains them in plain language using an AI analyst.
 
 Built for **SME security teams, IT administrators, and incident responders** who need fast answers without deploying a full SIEM.
 
-### Why ForensIQ?
-
-| Feature | ForensIQ | Velociraptor | Autopsy | Splunk |
-|---------|:--------:|:------------:|:-------:|:------:|
-| Single-binary install | ✅ | ❌ | ❌ | ❌ |
-| Works on live system | ✅ | ✅ | ❌ | ✅ |
-| AI explanation | ✅ | ❌ | ❌ | ❌ |
-| Event graph correlation | ✅ | ❌ | ❌ | ✅ |
-| PDF report export | ✅ | ❌ | ✅ | ✅ |
-| Free & open-source | ✅ | ✅ | ✅ | ❌ |
-
 ---
 
-## ✨ Features
+## Features
 
-### 🔍 Comprehensive Scanning (19 scanners)
+### Comprehensive Scanning (19 scanners)
 - **Processes** — running processes, CPU/memory anomalies, suspicious command lines
 - **Network** — open ports, active connections, malicious destinations, geo-located IPs
 - **Persistence** — autostart entries, cron jobs, systemd services
@@ -46,38 +29,38 @@ Built for **SME security teams, IT administrators, and incident responders** who
 - **Devices** — USB history, browser activity
 - **Logs** — auth.log, syslog, journalctl, kernel log, dpkg history
 
-### 📊 Interactive Dashboard
+### Interactive Dashboard
 - Real-time risk score (0–100) with severity breakdown
 - Activity timeline with click-to-filter (1H / 1D / 1W / 1MO / All)
 - Category distribution donut chart
 - Top findings with one-click navigation
 - Search across all findings by description, source, severity
 
-### 🕸️ Event Graph (Correlation Engine)
+### Event Graph (Correlation Engine)
 - D3.js force-directed graph linking processes, ports, connections, files, users
 - Smart filtering — auto-prioritizes by severity and connectivity
 - Attack chains — automatically detects connected subgraphs with HIGH/CRITICAL nodes
 - Interactive: drag, zoom, pan, click for details
 
-### 🤖 AI Analyst (Optional)
+### AI Analyst (Optional)
 - Local AI via **Ollama** (free, runs on your hardware) or cloud via **Anthropic Claude API**
 - Automatic post-scan assessment with verdict, top threats, immediate actions
 - Interactive chat with full scan context
 - 100-message history per session
 - Disabled by default — enable in `forensiq_app.py`
 
-### 🚨 Real-Time Monitoring
+### Real-Time Monitoring
 - Background thread monitors new ports and suspicious processes every 60s
 - System tray notifications + in-app toast alerts
 - Severity-based color coding (CRITICAL / HIGH / MEDIUM)
 
-### 📑 Export & Reporting
+### Export & Reporting
 - **PDF report** — professional multi-page document with cover, executive summary, findings tables
 - **CSV export** — for spreadsheet analysis
 - **JSON export** — full raw data dump
 - **Session comparison** — diff between any two scans (risk delta, new/resolved findings, process/port changes)
 
-### 🎨 Modern UI
+### Modern UI
 - Dark / Light theme (persisted)
 - Virtual scrolling for large datasets
 - Detail overlay with copy-to-clipboard
@@ -85,7 +68,7 @@ Built for **SME security teams, IT administrators, and incident responders** who
 
 ---
 
-## 🚀 Installation
+## Installation
 
 ### Quick Install (Linux)
 
@@ -122,7 +105,7 @@ User data at `~/.forensiq/` is preserved by default.
 
 ---
 
-## 📚 Usage
+## Usage
 
 ### First Launch
 
@@ -149,7 +132,7 @@ When you start ForensIQ, a session dialog appears with three options:
 
 ### Exporting
 
-- **PDF report** — click the `📄 PDF` button in the top bar (saved to `~/Downloads/`)
+- **PDF report** — click the `PDF` button in the top bar (saved to `~/Downloads/`)
 - **CSV / JSON** — buttons next to the export controls
 
 ### Data Location
@@ -168,7 +151,7 @@ This means **moving the program between computers doesn't carry over data** — 
 
 ---
 
-## 🤖 Enabling AI Analyst
+## Enabling AI Analyst
 
 The AI Analyst tab is **disabled by default**. To enable:
 
@@ -205,7 +188,7 @@ Restart ForensIQ — the AI Analyst tab will appear in the sidebar.
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌──────────────────────────────────────────────────────────┐
@@ -258,7 +241,7 @@ forensiq/
 
 ---
 
-## 🗺️ Roadmap
+## Roadmap
 
 ### v3.0 (Planned)
 - **MITRE ATT&CK mapping** — auto-tag findings with technique IDs (T1059, T1078, etc.)
@@ -279,7 +262,7 @@ forensiq/
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Pull requests welcome. For major changes, please open an issue first.
 
@@ -295,13 +278,13 @@ sudo python3 forensiq_app.py
 
 ---
 
-## 📄 License
+## License
 
 MIT © 2026 Jegor Gubarev
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Chart.js** — dashboard visualizations
 - **D3.js** — event graph rendering
@@ -313,6 +296,6 @@ MIT © 2026 Jegor Gubarev
 
 <div align="center">
 
-**Built by Jegor Gubarev** · [Report a bug](https://github.com/N7EX1T/ForensIQ-DFIR/issues) · [Request a feature](https://github.com/N7EX1T/ForensIQ-DFIR/issues)
+**Built by Jegor Gubarev**
 
 </div>
