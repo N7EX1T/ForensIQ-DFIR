@@ -91,7 +91,7 @@ Built for **SME security teams, IT administrators, and incident responders** who
 
 ```bash
 git clone https://github.com/N7EX1T/ForensIQ-DFIR.git
-cd forensiq
+cd ForensIQ-DFIR
 chmod +x install.sh
 ./install.sh
 ```
@@ -106,7 +106,7 @@ pip install --user PyQt6 PyQt6-WebEngine reportlab
 
 # 2. Clone the repo
 git clone https://github.com/N7EX1T/ForensIQ-DFIR.git
-cd forensiq
+cd ForensIQ-DFIR
 
 # 3. Run directly
 sudo python3 forensiq_app.py
@@ -286,7 +286,7 @@ Pull requests welcome. For major changes, please open an issue first.
 ```bash
 # Setup development environment
 git clone https://github.com/N7EX1T/ForensIQ-DFIR.git
-cd forensiq
+cd ForensIQ-DFIR
 pip install -r requirements.txt
 
 # Run from source
